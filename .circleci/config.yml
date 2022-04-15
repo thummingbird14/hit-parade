@@ -13,6 +13,7 @@ jobs:
   deploy:
     docker:
       - image: circleci/node
+      - image: circleci/python:3.9-buster-node-browsers-legacy
     environment:
       AWS_REGION: eu-west-2
     steps:
